@@ -1,6 +1,7 @@
 *{
     margin: 0 auto;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 .header-container{
@@ -24,6 +25,12 @@
     font-family: Roboto;
     font-size: 16px;
     font-weight: 400;
+
+    transition: color, text-shadow 0.5s linear;
+}
+.header-text-G:hover{
+    color:#99f03c;
+    text-shadow: 0 0 10px #99f03c;
 }
 
 .down-arrow{
@@ -37,6 +44,12 @@
     font-family: Roboto;
     font-size: 16px;
     font-weight: 400;
+
+    transition: color, text-shadow 0.5s linear;
+}
+.header-text-C:hover{
+    color:#99f03c;
+    text-shadow: 0 0 10px #99f03c;
 }
 
 .header-text-CM{
@@ -46,19 +59,31 @@
     font-family: Roboto;
     font-size: 16px;
     font-weight: 400;
+
+    transition: color, text-shadow 0.5s linear;
+}
+.header-text-CM:hover{
+    color:#99f03c;
+    text-shadow: 0 0 10px #99f03c;
 }
 
 .header-search{
-    padding: 8px 143px 9px 16px;
-    background-color: #FFF;
-    border-radius: 4px;
+    width: 100%;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 5px 2px rgba(0, 29, 108, 0.07);
+    border: none;
+    padding: 13px 20px;
+    border: none;
 
-    color: #435766;
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 400;
+    transition: box-shadow 0.1s linear;
+
 }
 
+.header-search:hover{
+    box-shadow:0 0 10px #75ff25;
+}
+/* -------------------------------- */
 .header-search-box{
     margin-left: 48px;
 }
@@ -80,7 +105,14 @@
     font-family: Roboto;
     font-size: 16px;
     font-weight: 400;
+
+    transition: color, text-shadow 0.5s linear;
 }
+.header-text-account:hover{
+    color:#99f03c;
+    text-shadow: 0 0 10px #99f03c;
+}
+
 
 
 
@@ -549,3 +581,90 @@
     font-size: 18px;
     font-weight: 400;
 }
+
+
+/*------- SING IN -------*/
+
+.reg{
+    width: 300px;
+    border: 1px solid #000;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0 20px 0;
+    margin-top: 10%;
+}
+
+.reg__title{
+    color: #979797;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.reg__form{
+    width: 220px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+
+}
+
+.reg__input{
+    width: 100%;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 5px 2px rgba(0, 29, 108, 0.07);
+    border: none;
+
+    padding: 13px 20px;
+    margin-bottom: 15px;
+
+    
+    
+}
+
+.reg__btn:hover{
+    box-shadow:0 0 15px #75ff25;
+    background-color: #88e751;
+}
+
+.reg__btn{
+    color: #FDFDFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 15px 90px;
+    background-color: #8DD83D;
+    border: none;
+
+    transition: box-shadow 0.1s linear;
+    transition: background-color 0.05s linear;
+}
+
+.reg__link{
+    color: rgba(0, 0, 0, 0.50);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+::-webkit-scrollbar{
+    overflow-y: scroll;
+    background-color: #365514;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #84ff00;
+    box-shadow: 0 0 15px #73ff00;
+}
+
