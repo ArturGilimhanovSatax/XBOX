@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 .header-container{
     display: flex;
     align-items: center;
@@ -11,7 +12,31 @@
     background-color: #373A3C;
     border-radius: 4px;
     justify-content: space-around;
+
+    animation-duration: 5s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+
 }
+
+@keyframes slidein {
+    from {
+        background-color: #373A3C;
+    }
+    50% {
+        background-color: #313f26;
+    }
+  
+    to {;
+        background-color: #373A3C;
+    }
+  }
+
+
+
+
+
+
 
 .header-links{
     display: flex;
@@ -595,7 +620,26 @@
     align-items: center;
     padding: 20px 0 20px 0;
     margin-top: 10%;
+
+    animation-duration: 1s;
+    animation-name: regopacity;
 }
+
+@keyframes regopacity {
+from {
+    margin-top: 5%;
+    padding: 0 0 0 0;
+    opacity: 0%;
+}
+
+to {
+    padding: 20px 0 20px 0;
+    opacity: 100%;
+    margin-top: 10%;
+}
+
+}
+
 
 .reg__title{
     color: #979797;
@@ -611,6 +655,19 @@
     margin: 0 auto;
     margin-bottom: 16px;
 
+    animation-duration: 1s;
+    animation-name: regf;
+}
+
+
+@keyframes regf {
+from {
+    margin-bottom: 0px;
+}
+
+to {
+    margin-bottom: 16px;
+}
 }
 
 .reg__input{
